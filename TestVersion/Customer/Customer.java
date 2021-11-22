@@ -24,6 +24,10 @@ public class Customer {
         return customer;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
     public int getUserAge() {
         return userAge;
     }
