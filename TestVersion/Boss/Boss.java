@@ -40,7 +40,9 @@ public class Boss{
 
         if(RealUserInput.equalsIgnoreCase("yes")){
             System.out.println("New user registered");
+
             return true;
+
         }
         else if(RealUserInput.equalsIgnoreCase("no")){
             System.out.println("New user deleted");

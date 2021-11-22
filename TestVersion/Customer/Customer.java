@@ -1,15 +1,19 @@
 package Customer;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Customer {
     Scanner scanner = new Scanner(System.in);
     private String userName;
     private int userAge;
+    private int ID;
+    private boolean isMemberActive;
 
     public Customer(String userName, int userAge) {
         this.userName = userName;
         this.userAge = userAge;
+        this.isMemberActive = true;
     }
 
     public Object newCustomerInfomation() {
@@ -17,8 +21,10 @@ public class Customer {
         String userName = scanner.nextLine();
         System.out.println("What about their age?");
         int userAge = scanner.nextInt();
+        Random random = new Random();
+        ID = random.nextInt(1000);
         Customer customer = new Customer(userName, userAge);
-
+        customer.toString();
         //We want then the new customer class to get to a Boss.Boss method to verify if they want it to be added to the System.Database
 
         return customer;
@@ -34,9 +40,11 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer.Customer{" +
+        return "Customer{" +
                 "userName='" + userName + '\'' +
                 ", userAge=" + userAge +
+                ", ID=" + ID +
+                ", isMemberActive=" + isMemberActive +
                 '}';
     }
 }
