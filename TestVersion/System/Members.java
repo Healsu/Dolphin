@@ -4,18 +4,18 @@ import Customer.Customer;
 
 import java.lang.reflect.Array;
 
-public class Database {
+public class Members {
     private int userID;
     Customer customer;
 
 
-    public Database(int userID) {
+    public Members(int userID) {
         this.userID = userID;
     }
 
-    public Object createNewUser(Customer newCustomer){
+    public void addUserToMembers(Customer newCustomer){
         //We want to add a Customer.Customer object to a System.Database object
-        return null;
+
     }
 
 }

@@ -3,12 +3,14 @@ import Customer.Customer;
 import Menu.Menu;
 import java.util.Scanner;
 
+
 public class Boss{
     Scanner scanner = new Scanner(System.in);
     public String bossName;
     private boolean bossMenu = true;
     Customer customer;
     Menu menu;
+    System memberList;
 
     public Boss(String bossName) {
         this.bossName = bossName;
@@ -23,16 +25,18 @@ public class Boss{
             switch (bossUserInput) {
                 case 1:
                     acceptNewUser(newCustomer.newCustomerInfomation());
+
                 case 2:
 
                 case 3:
-
+                bossMenu = false;
             }
         }
         //Dont look at true boolean :)
     }
 
     public boolean acceptNewUser(Object customer){
+
         System.out.println("New user registered would you like to accept them into the system "+bossName+"?");
         //UserInput doesnt take the input from user, but skips it for some reason.
         String UserInput = scanner.nextLine();
@@ -40,7 +44,6 @@ public class Boss{
 
         if(RealUserInput.equalsIgnoreCase("yes")){
             System.out.println("New user registered");
-
             return true;
 
         }

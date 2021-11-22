@@ -14,6 +14,7 @@ public class Menu {
         Customer newCustomer = new Customer("TestUser",0);
         Boss boss = new Boss("Timmie >:)");
 
+
         while(menu == true){
             System.out.println("Choose an option: \n1. Boss Menu \n2. Price Rules \n3. Quit the program");
             int userInput = scanner.nextInt();
