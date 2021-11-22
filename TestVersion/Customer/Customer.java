@@ -24,6 +24,10 @@ public class Customer {
         return customer;
     }
 
+    public int getUserAge() {
+        return userAge;
+    }
+
     @Override
     public String toString() {
         return "Customer.Customer{" +
