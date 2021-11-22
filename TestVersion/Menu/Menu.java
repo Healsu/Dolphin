@@ -16,7 +16,7 @@ public class Menu {
 
 
         while(menu == true){
-            System.out.println("Choose an option: \n1. Boss Menu \n2. Price Rules \n3. Quit the program");
+            System.out.println("Choose an option: \n1. Boss Menu \n2. Types of membership \n3. Quit the program");
             int userInput = scanner.nextInt();
             switch (userInput){
                 case 1:

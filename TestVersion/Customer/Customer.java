@@ -9,11 +9,14 @@ public class Customer {
     private int userAge;
     private int ID;
     private boolean isMemberActive;
+    private int memberType;
 
-    public Customer(String userName, int userAge) {
+    public Customer(String userName, int userAge, int memberType) {
         this.userName = userName;
         this.userAge = userAge;
+        //er isMemberActive nødvendig?
         this.isMemberActive = true;
+        this.memberType = memberType;
     }
 
     public Object newCustomerInfomation() {
@@ -23,7 +26,7 @@ public class Customer {
         int userAge = scanner.nextInt();
         Random random = new Random();
         ID = random.nextInt(1000);
-        Customer customer = new Customer(userName, userAge);
+        Customer customer = new Customer(userName, userAge, memberType);
         customer.toString();
         //We want then the new customer class to get to a Boss.Boss method to verify if they want it to be added to the System.Database
 
