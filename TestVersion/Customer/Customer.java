@@ -19,7 +19,7 @@ public class Customer {
         int userAge = scanner.nextInt();
         Customer customer = new Customer(userName, userAge);
 
-        //We want then the new customer class to get to a Boss.Boss method to verify if they want it to be added to the Database
+        //We want then the new customer class to get to a Boss.Boss method to verify if they want it to be added to the System.Database
 
         return customer;
     }

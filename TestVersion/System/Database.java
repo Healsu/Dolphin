@@ -1,3 +1,5 @@
+package System;
+
 import Customer.Customer;
 
 public class Database {
@@ -10,7 +12,7 @@ public class Database {
     }
 
     public Object createNewUser(Customer newCustomer){
-        //We want to add a Customer.Customer object to a Database object
+        //We want to add a Customer.Customer object to a System.Database object
         return null;
     }
 
