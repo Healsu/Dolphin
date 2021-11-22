@@ -1,3 +1,6 @@
+import Boss.Boss;
+import Customer.Customer;
+
 import java.util.Scanner;
 
 public class mainMenu {
@@ -6,7 +9,7 @@ public class mainMenu {
         //Cant call the method withouth the object, needs to be changed
         Customer newCustomer = new Customer("",0);
         Boss boss = new Boss("Timmie >:)");
-        System.out.println("Choose an option: \n1. Create new user \n2. Boss Menu \n3. Price Rules \n4. Quit the program");
+        System.out.println("Choose an option: \n1. Create new user \n2. Boss.Boss Menu \n3. Price Rules \n4. Quit the program");
         int userInput = scanner.nextInt();
         switch (userInput){
             case 1:

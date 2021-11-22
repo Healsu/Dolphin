@@ -1,3 +1,5 @@
+package Boss;
+
 import java.util.Scanner;
 
 public class Boss {

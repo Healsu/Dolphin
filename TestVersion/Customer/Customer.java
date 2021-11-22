@@ -1,3 +1,5 @@
+package Customer;
+
 import java.util.Scanner;
 
 public class Customer {
@@ -17,14 +19,14 @@ public class Customer {
         int userAge = scanner.nextInt();
         Customer customer = new Customer(userName, userAge);
 
-        //We want then the new customer class to get to a Boss method to verify if they want it to be added to the Database
+        //We want then the new customer class to get to a Boss.Boss method to verify if they want it to be added to the Database
 
         return customer;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Customer.Customer{" +
                 "userName='" + userName + '\'' +
                 ", userAge=" + userAge +
                 '}';
